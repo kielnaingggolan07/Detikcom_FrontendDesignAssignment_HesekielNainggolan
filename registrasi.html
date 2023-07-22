@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Plan Competition 2023</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+    <!-- link boostrap -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+    <!-- link font awasome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <script src="https://kit.fontawesome.com/e74c3a743a.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid" style="background-color: #007CBD;">
+        <nav class="navbar navbar-default fixed-top navbar-expand-md navbar-light" role="navigation" style="background-color: #007CBD;">
+            <a class="navbar-brand" href="index.html"><img src="assets/navbar.PNG" alt="" style="height: 50px; width: 180px; "></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about" style="color: white;">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#mechanism" style="color: white;">Mechanism</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#latestupdate" style="color: white;">Latest Update</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#register" class="btn btn-light" style="border-radius: 100px; width: 121px; height: 37px; color:#007CBD;">Register</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <div class="regis">
+        <img src="assets/regis.PNG" alt="" style="" class="regis">
+        <div class="text1" style="position: absolute; top: 30%; left: 50%; transform: translate(-50%, -50%); font-size: 48px; font-weight: bold; color: #fff;"> Register</div>
+        <form class="container mt-0" style="top: 10%; transform: translate(0%, -10%);">
+            <div class="mb-3">
+                <label for="exampleInputperusahaan" class="form-label"></label>
+                <input type="email" class="form-control" id="exampleInputperusahaan" placeholder="Nama Perusahaan">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label"></label>
+                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputNoHp" class="form-label"></label>
+                <input type="email" class="form-control" id="exampleInputNoHp" placeholder="Nomor Telepon">
+                <div id="emailHelp" class="form-text" style="font-weight: lighter;">Isi hanya angka</div>
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputTentangPerusahaan" class="form-label"></label>
+                <textarea class="form-control" id="exampleInputTentangPerusahaan" rows="3" placeholder="Tentang Perusahaan (Max. 200 Character)"></textarea>
+            </div>
+            <div class="card mb-3 mt-3" style="max-width: 100%;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="assets/upload.PNG" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body" style="margin-top: 50px;">
+                            <ol>
+                                <li>Format file: .png, .jpg, .jpeg</li>
+                                <li>Maksimal ukuran file 200KB</li>
+                                <li>Hindari penggunaan logo berwarna putih</li>
+                                <li>Minimal lebar 300px</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="input-group mb-0 mt-3" style="max-width: 100%;">
+                <input type="text" id="button-addon2" class="form-control" placeholder="Profil Perusahaan atau Deck (opsional)" aria-describedby="button-addon2">
+                <button class="btn" type="button" id="button-addon2" style="background-color: #007CBD; border-radius: 8px; color: #fff;">Upload File</button>
+            </div>
+            <div class="form-text" style="font-weight: lighter;">Format file .pdf , maksimal size 20mb</div>
+
+            <div class="mb-3">
+                <label for="exampleInputLinkWebsite" class="form-label"></label>
+                <input type="email" class="form-control" id="exampleInputLinkWebsite" placeholder="Link website">
+                <div id="emailHelp" class="form-text" style="font-weight: lighter;">Website, Sosial Media, dll. Sertakan protokol URL (https:// atau http://).</div>
+            </div>
+
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Dengan menekan tombol "Daftar", Saya menyetujui syarat dan ketentuan yang berlaku</label>
+            </div>
+            <center><button type="submit" class="btn btn-primary mb-3 mt-5" style="width: 400px;">register</button></center>
+        </form>
+    </div>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+<footer style="background-color: #007CBD;">
+    <div class="content">
+        <div class="logo-details">
+            <a class="navbar-brand" href="#brand"><img src="assets/navbar.PNG" alt="" style="height: 50px; width: 180px; "></a>
+        </div>
+        <div class="top">
+            <p style="color: #ffffff; margin-top: 25px;">Detikfinance memberikan ruang kepada para startup di Indonesia untuk menunjukkan, serta mempromosikan brand mereka untuk mendapatkan perhatian dari venture capital atau angel investor</p>
+            <h1 style="margin-left: 150px;"> </h1>
+            <div class="media-icons">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+        <b><hr style="color: #fff; size: 1px;"></b>
+    </div>
+    <div class="bottom-details">
+        <div class="bottom_text">
+            <span class="copyright_text"> © Detikcom. All rights reserved</span>
+            </span>
+        </div>
+    </div>
+</footer>
+
+</html>
